@@ -36,34 +36,24 @@ export default function Card(props) {
         </span>
         <img className="" src={tenisImg} alt="" />
       </div>
-      <div className={''}>
-        <span
-        className="
-        flex
-        text-[12px]
-        text-[#8F8F8F]
-        "
-        >{props.category}Tênis</span>
-        <p
-        className="
-        flex
-        text-[16px]
-        text-[#474747]
-        "
-        >{props.productName}K-Swiss V8 - Masculino</p>
-        <span className="
-
-        text-[16px]
-        text-[#8F8F8F]
-        text underline line-through
-        "
-        >{props.price}$200</span>
-        <span className="
-        text-[16px]
-        text-[#1F1F1F]
-        
-        "
-        >{props.discountPrice}$100</span>
+      <div className="flex flex-col gap-1">
+        <span className="text-[#8F8F8F] text-xs font-bold">{props.category}</span>
+        <p className="text-[#474747] text-2xl">{props.productName}</p>
+        <div className="flex gap-2 items-center">
+          <span
+            className={`
+            text-2xl font-bold
+            ${props.isDiscount && 'text-[#8F8F8F] line-through'}
+        `}
+          >
+            {props.price}
+          </span>
+          {props.isDiscount ? (
+            <span className="text-[#1F1F1F] text-2xl font-bold">{props.discountPrice}</span>
+          ) : (
+            ''
+          )}
+        </div>
       </div>
       
     </div>

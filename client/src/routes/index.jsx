@@ -4,6 +4,6 @@ import UiView from '../pages/UiView';
 export const router = createBrowserRouter([
   {
     path: '/teste',
-    element: <UiView/>,
+    element: <UiView />,
   },
 ]);

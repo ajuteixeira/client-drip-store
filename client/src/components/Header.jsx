@@ -1,4 +1,4 @@
-import Card from './Card';
+import Cart from './Cart';
 import Logo from './Logo';
 
 export default function Header() {
@@ -7,7 +7,7 @@ return (
    <Logo />
     <h1>Digital Store</h1>
 
-    <Card />
+    <Cart />
 
    </div>
 )

@@ -1,8 +1,5 @@
-import Cart from "../assest/img/Buy.png"
+import cart from '../assets/images/cart.png';
 
 export default function Cart() {
-    return(
-        <img src={cart} alt="card" title="Digital college"/> 
-    
-    )
+  return <img src={cart} alt="card" title="Digital college" />;
 }

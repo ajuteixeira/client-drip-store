@@ -37,7 +37,9 @@ export default function Card(props) {
         <img className="" src={tenisImg} alt="" />
       </div>
       <div className="flex flex-col gap-1">
-        <span className="text-[#8F8F8F] text-xs font-bold">{props.category}</span>
+        <span className="text-[#8F8F8F] text-xs font-bold">
+          {props.category}
+        </span>
         <p className="text-[#474747] text-2xl">{props.productName}</p>
         <div className="flex gap-2 items-center">
           <span
@@ -49,13 +51,14 @@ export default function Card(props) {
             {props.price}
           </span>
           {props.isDiscount ? (
-            <span className="text-[#1F1F1F] text-2xl font-bold">{props.discountPrice}</span>
+            <span className="text-[#1F1F1F] text-2xl font-bold">
+              {props.discountPrice}
+            </span>
           ) : (
             ''
           )}
         </div>
       </div>
-      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import Card from '../components/Card';
 import { cardsInfo } from '../utils/cardsMock';
+
 export default function UiTest() {
   return (
     <main className="min-w-full">

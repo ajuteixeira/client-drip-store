@@ -3,11 +3,11 @@ import UiView from '../pages/UiView';
 
 export const router = createBrowserRouter([
   {
-    cardProduct
+    path: '/',
+    element: <div>Hello World!</div>,
+  },
+  {
     path: '/teste',
     element: <UiView />,
-    path: '/',
-    element: <div></div>,
-    main
   },
 ]);

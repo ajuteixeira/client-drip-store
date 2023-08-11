@@ -1,4 +1,6 @@
 import Card from '../components/Card';
+import FooterIcons from '../components/FooterIcons';
+import UnderlinedLink from '../components/UnderlinedLink';
 import { cardsInfo } from '../utils/cardsMock';
 
 export default function UiTest() {
@@ -23,6 +25,11 @@ export default function UiTest() {
           })}
         </div>
       </div>
+      <div>
+        <UnderlinedLink text="Cadastre-se" url={'#'} />
+        <UnderlinedLink text="Remover item" url={'#'} />
+      </div>
+      <FooterIcons />
     </main>
   );
 }

@@ -1,4 +1,4 @@
-import tenisImg from '../assets/images/tenisProjReact.png';
+import tenisImg from '../assets/images/product.png';
 export default function Card(props) {
   return (
     <div className={`h-[439px] w-72 flex flex-col`}>

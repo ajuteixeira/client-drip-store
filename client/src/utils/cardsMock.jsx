@@ -1,4 +1,4 @@
-import tenisImg from '../assets/images/tenisProjReact.png';
+import tenisImg from '../assets/images/product.png';
 export const cardsInfo = [
   {
     id: 1,

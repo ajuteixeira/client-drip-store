@@ -1,25 +1,19 @@
-import tShirtCollection from '../assets/images/tShirtCollection.png'; 
 import Button from '../components/Button';
 
-
-
-export default function UiTest(props) {
-  return <main className="min-w-full">
-
-
-<div className={`h-[439px] w-72 flex flex-col`}>
+export default function CollectionCard(props) {
+  return (
       <div
         className={`
-            w-338px
-            h-212px
+            w-[405px]
+            h-[251px]
             bg-[#D8E3F2] 
-            flex-shrink: 0
             rounded
             shadow-[6px_16px_30px_0px_rgba(105,98,98,0.05)] 
             flex
             justify-center 
             items-center
             relative
+            overflow-hidden
         `}
       >
         <span
@@ -28,7 +22,7 @@ export default function UiTest(props) {
                 top-5
                 left-5 
                 px-4 
-                py-1 
+                py-2 
                 flex 
                 justify-center 
                 items-center 
@@ -42,33 +36,35 @@ export default function UiTest(props) {
           {props.discountPercentual}% OFF
         </span>
 
-        <span className=" 
-        absolute
-        flex
-        font-bold
-        text-[#1F1F1F]
-        text-2xl
-        left-5 
-        py-1        
+        <span
+          className=" 
+                absolute
+                flex
+                font-bold
+                text-[#1F1F1F]
+                text-2xl
+                left-4
+                px-1 
+                               
+                max-w-[150px]       
              "
         >
-          Novo drop <br /> Supreme </span>
+          {props.title}
+        </span>
 
-        <img className="
-          relative
+        <div className="flex absolute bottom-3 left-5 z-10">
+          <Button type="default" color="white" title="Comprar" />
+        </div>
+        <img
+          className="
+          absolute
           flex
-          pl-24          
-             " 
-        src={tShirtCollection} alt="" />
+          bottom-0
+          right-0
+             "
+          src={props.img}
+          alt=""
+        />
       </div>
-
-      
-      
-    </div>
-
-  
-
-    
-    
-    </main>;
+  );
 }

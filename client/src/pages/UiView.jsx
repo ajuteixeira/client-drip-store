@@ -1,9 +1,11 @@
-import Footericons from '../components/FooterIcons'
+import FooterIcons from '../components/FooterIcons'
+import CollectionCards from "../components/CollectionCards";
 
 export default function UiTest() {
-  return <main className="min-w-full">
-    <Footericons />
-
-  </main>;
-
+  return (
+    <main className="min-w-full">
+    <CollectionCards />
+    <FooterIcons />
+  </main>
+    )
 }

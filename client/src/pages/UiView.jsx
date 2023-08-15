@@ -1,11 +1,13 @@
-import FooterIcons from '../components/FooterIcons'
-import CollectionCards from "../components/CollectionCards";
+import Hero from '../components/Hero';
+import CollectionCards from '../components/CollectionCards';
+import TrendingProducts from '../components/TrendingProducts';
 
 export default function UiTest() {
   return (
-    <main className="min-w-full">
-    <CollectionCards />
-    <FooterIcons />
-  </main>
-    )
+    <main className="w-full">
+      <Hero />
+      <TrendingProducts />
+      <CollectionCards />
+    </main>
+  );
 }

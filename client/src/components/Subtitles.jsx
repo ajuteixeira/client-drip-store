@@ -13,7 +13,7 @@ export default function Subtitles(props) {
       {props.type === 'secondary' && (
         <h3
           className={
-            'text-[#474747] font-bold text-[24px] leading-[38px] tracking-[0.75px]'
+            'pb-4 text-[#474747] font-bold text-[24px] leading-[38px] tracking-[0.75px]'
           }
         >
           {props.children}

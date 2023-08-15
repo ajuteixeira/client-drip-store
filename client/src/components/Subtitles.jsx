@@ -4,7 +4,7 @@ export default function Subtitles(props) {
       {props.type === 'primary' && (
         <h2
           className={
-            'text-[#F6AA1C] font-bold text-[16px] leading-[24px] tracking-[0.75px]'
+            'text-[#F6AA1C] text-center sm:text-left font-bold text-[16px] leading-[24px] tracking-[0.75px]'
           }
         >
           {props.children}

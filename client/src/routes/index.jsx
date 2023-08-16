@@ -1,10 +1,11 @@
 import { createBrowserRouter } from 'react-router-dom';
 import UiView from '../pages/UiView';
+import Home from '../pages/Home';
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <UiView />,
+    element: <Home />,
   },
   {
     path: '/produtos',
@@ -12,7 +13,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/categorias',
-    element: <UiView />,
+    element: <UiView />
   },
   {
     path: '/meuspedidos',

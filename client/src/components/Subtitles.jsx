@@ -4,7 +4,7 @@ export default function Subtitles(props) {
       {props.type === 'primary' && (
         <h2
           className={
-            'text-[#F6AA1C] font-bold text-[16px] leading-[24px] tracking-[0.75px]'
+            'text-[#F6AA1C] text-center sm:text-left font-bold text-[16px] leading-[24px] tracking-[0.75px]'
           }
         >
           {props.children}
@@ -13,7 +13,7 @@ export default function Subtitles(props) {
       {props.type === 'secondary' && (
         <h3
           className={
-            'text-[#474747] font-bold text-[24px] leading-[38px] tracking-[0.75px]'
+            'pb-4 text-[#474747] font-bold text-[24px] leading-[38px] tracking-[0.75px]'
           }
         >
           {props.children}

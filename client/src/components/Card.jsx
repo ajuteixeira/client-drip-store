@@ -37,7 +37,7 @@ export default function Card(props) {
         <img className="" src={tenisImg} alt="" />
       </div>
       <div className="flex flex-col gap-1">
-        <span className="text-[#8F8F8F] text-xs font-bold">
+        <span className="text-[#8F8F8F] text-xs font-bold pt-3">
           {props.category}
         </span>
         <p className="text-[#474747] text-2xl">{props.productName}</p>

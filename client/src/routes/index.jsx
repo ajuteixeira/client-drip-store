@@ -4,10 +4,18 @@ import UiView from '../pages/UiView';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Hello World!</div>,
+    element: <UiView />,
   },
   {
-    path: '/teste',
+    path: '/produtos',
+    element: <UiView />,
+  },
+  {
+    path: '/categorias',
+    element: <UiView />,
+  },
+  {
+    path: '/meuspedidos',
     element: <UiView />,
   },
 ]);

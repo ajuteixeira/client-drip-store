@@ -6,7 +6,7 @@ export default function UiTest() {
   return (
     <main className="w-full">
       <Hero />
-      {/* <TrendingProducts /> */}
+      <TrendingProducts />
       <CollectionCards />
     </main>
   );

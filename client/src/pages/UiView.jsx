@@ -7,11 +7,11 @@ import TrendingProducts from '../components/TrendingProducts';
 export default function UiTest() {
   return (
     <main className="min-w-full">
-      <Footer />
       <Footericons />
       <CollectionCards />
       <Hero />
       <TrendingProducts />
+      <Footer />
     </main>
   );
 }

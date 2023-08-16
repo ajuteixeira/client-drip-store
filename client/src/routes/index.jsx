@@ -8,7 +8,15 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: '/teste',
+    path: '/produtos',
+    element: <UiView />,
+  },
+  {
+    path: '/categorias',
+    element: <UiView />
+  },
+  {
+    path: '/meuspedidos',
     element: <UiView />,
   },
 ]);

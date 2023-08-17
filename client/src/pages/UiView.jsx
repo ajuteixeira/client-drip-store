@@ -4,16 +4,15 @@ import CollectionCards from '../components/CollectionCards';
 import TrendingProducts from '../components/TrendingProducts';
 import Header from "../components/Header";
 import NavbarItem from '../components/NavbarItem';
+import ProductShow from '../components/ProductShow';
 
 export default function UiTest() {
   return (
     <main className="min-w-full">
       <Header/>
       <NavbarItem/>
-      <Hero />
-      <CollectionCards />
-      <TrendingProducts />
-      <Footer />
+      <ProductShow/>
+      <Footer/>
     </main>
   );
 }

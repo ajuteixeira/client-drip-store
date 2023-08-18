@@ -1,3 +1,4 @@
+
 import CollectionCards from "../components/CollectionCards";
 
 export default function UiTest() {

@@ -28,6 +28,16 @@ export default function Subtitles(props) {
           {props.children}
         </h4>
       )}
+       {props.type === 'third2' && (
+        <h4
+          className={
+            'text-[#474747] font-bold text-[14px] leading-[22px] tracking-[0.75px]'
+          }
+        >
+          {props.children}
+        </h4>
+      )}
+
     </>
   );
 }

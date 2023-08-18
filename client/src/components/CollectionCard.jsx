@@ -33,7 +33,7 @@ export default function CollectionCard(props) {
                 text-[#474747]
             "
         >
-          {props.discountPercentual}% OFF
+          {props.discountPercentual}30% OFF
         </span>
 
         <span

@@ -1,10 +1,10 @@
 import tenisImg from '../assets/images/product.png';
 export default function Card(props) {
   return (
-    <div className={`h-[439px] w-72 flex flex-col`}>
+    <div className={`h-[439px] md:w-72 w-full flex flex-col`}>
       <div
         className={`
-            w-full 
+            xl:w-full
             h-80 
             bg-white 
             rounded 

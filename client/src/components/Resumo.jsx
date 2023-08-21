@@ -3,7 +3,7 @@ import Text from "./Text"
 export default function resumo () {
     return (
 
-        <div className="flex flex-col w-[334px] h-[364px] align-itens:flex-star p-[30px] bg-slate-100">
+        <div className="flex flex-col w-[334px] h-[364px] align-itens:flex-star p-[30px] bg-white">
 
             <div>
                 <Text type= 'UPgray-description' children='RESUMO'/>

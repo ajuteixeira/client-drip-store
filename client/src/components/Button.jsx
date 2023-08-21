@@ -20,12 +20,17 @@ export default function Button(props) {
 
     ${
       props.type === 'default' &&
-      'px-9 py-3 text-sm font-bold leading-5 tracking-wider rounded'
+      'px-9 py-3 w-full sm:w-auto text-sm font-bold leading-5 tracking-wider rounded '
+    }
+
+    ${
+      props.type === 'filter' &&
+      'px-3 py-3 w-full sm:w-auto text-sm leading-5 tracking-wider rounded border-solid border-[#474747] border-2'
     }
 
     `}
     >
-      {props.title}
+      {props.title || props.children}
     </button>
   );
 }

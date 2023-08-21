@@ -1,3 +1,4 @@
+import Button from "./Button"
 import Text from "./Text"
 
 export default function resumo () {
@@ -27,6 +28,10 @@ export default function resumo () {
 
             <div className="mt-5">
             <Text type= 'description' children='Total:'/>
+            </div>
+
+            <div className="m- mt-6 ">
+                <Button type='default' color='yellow-full' title='Continuar' />
             </div>
 
 

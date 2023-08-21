@@ -19,6 +19,11 @@ export default function Button(props) {
     }
 
     ${
+      props.color === 'yellow-full' &&
+      'text-[#f5f5f5] bg-[#FFB31F] w-full hover:bg-[#CF8900] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed'
+    }
+
+    ${
       props.type === 'default' &&
       'px-9 py-3 text-sm font-bold leading-5 tracking-wider rounded'
     }

@@ -4,7 +4,11 @@ import ProductShowHeader from './ProductShowHeader'
 import { cardsInfo } from '../utils/cardsMock'
 import Filter from './Filter'
 
+
 const ProductShow = () => {
+    
+    
+    
     
     return (
         <div className='w-screen  bg-[#F9F8FE] flex flex-col items-center'>
@@ -17,6 +21,7 @@ const ProductShow = () => {
                     return (
                         <Card
                         key={card.id}
+                        id={card.id}
                         discountPercentual={card.discountPercentual}
                         category={card.category}
                         productName={card.productName}

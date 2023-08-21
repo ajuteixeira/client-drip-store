@@ -1,8 +1,8 @@
 
-import CollectionCards from "../components/CollectionCards";
+import Resumo from "../components/Resumo";
 
 export default function UiTest() {
   return <main className="min-w-full">
-    <CollectionCards />
+    <Resumo />
   </main>;
 }

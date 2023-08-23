@@ -48,7 +48,7 @@ export default function Header() {
           <NavbarItem path='/' title='Home' />
           <NavbarItem path='/produtos' title='Produtos' />
           <NavbarItem path='/categorias' title='Categorias' />
-          <NavbarItem path='/meuspedidos' title='Meus Pedidos' />
+          <NavbarItem path='/pedidosroutes' title='Meus Pedidos' />
         </div>
       </nav>
   </header>

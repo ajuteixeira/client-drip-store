@@ -10,7 +10,7 @@ export default function Text(props) {
           {props.children}
         </p>
       )}
-      
+
       {props.type === 'gray-description' && (
         <p
           className={
@@ -29,9 +29,17 @@ export default function Text(props) {
         >
           {props.children}
         </p>
-        )}
+      )}
 
-
+      {props.type === 'mini-description' && (
+        <p
+          className={
+            'text-[#8f8f8f] font-normal text-[10px] leading-[34px] tracking-[0.75px]'
+          }
+        >
+          {props.children}
+        </p>
+      )}
     </>
   );
 }

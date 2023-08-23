@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import UiView from '../pages/UiView';
 import Home from '../pages/Home';
-import { cardsInfo } from '../utils/cardsMock'
+// import { cardsInfo } from '../utils/cardsMock'
 import ProductDetail from '../pages/ProductDetail';
-import UiTest from '../pages/UiView';
+import MyRequests from '../pages/MyRequests';
 
 export const router = createBrowserRouter([
   {
@@ -16,18 +16,14 @@ export const router = createBrowserRouter([
   },
   {
     path: '/categorias',
-    element: <UiView />
-  },
-  {
-    path: '/meus-pedidos',
     element: <UiView />,
   },
   {
-    path: `/produtos/:itemId`,
-    element: <ProductDetail/>
+    path: '/pedidosroutes',
+    element: <MyRequests />,
   },
   {
-    path: '/teste',
-    element: <UiTest/>
-  }
+    path: `/produtos/:itemId`,
+    element: <ProductDetail />,
+  },
 ]);

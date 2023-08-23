@@ -1,9 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
 import UiView from '../pages/UiView';
 import Home from '../pages/Home';
-import { cardsInfo } from '../utils/cardsMock'
+import { cardsInfo } from '../utils/cardsMock';
 import ProductDetail from '../pages/ProductDetail';
 import UiTest from '../pages/UiView';
+import Login from '../pages/Login';
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/categorias',
-    element: <UiView />
+    element: <UiView />,
   },
   {
     path: '/meus-pedidos',
@@ -24,10 +25,14 @@ export const router = createBrowserRouter([
   },
   {
     path: `/produtos/:itemId`,
-    element: <ProductDetail/>
+    element: <ProductDetail />,
   },
   {
     path: '/teste',
-    element: <UiTest/>
-  }
+    element: <UiTest />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
+  },
 ]);

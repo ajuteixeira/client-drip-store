@@ -12,7 +12,7 @@ import iconSneakers from '../assets/images/iconSneakers.svg'
 
 export default function CollectionCards() {
   return (
-    <div className="flex flex-col gap-5 p-7 sm:p-20 bg-[#F9F8FE]">
+<div className="flex flex-col gap-5 p-7 sm:p-20 bg-[#F9F8FE]">
       <Subtitles type="secondary">Produtos em alta</Subtitles>
       <div className="flex gap-3 w-full">
         <CollectionCard img={tShirtCollection} title="Supreme drop" />

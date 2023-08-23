@@ -14,6 +14,36 @@ export default function CollectionCards() {
         <CollectionCard img={tenisCollection} title="Coleção Adidas" />
         <CollectionCard img={headPhoneCollection} title="Novo Beats Bass" />
       </div>
+      <div className=" flex flex-col justify-center items-center mt-20">
+   
+   <Subtitles type='secondary' children = 'Coleção em Destaques' />
+    
+
+      <div className="flex gap-10 pt-6 mx-60">
+        <Category img={iconTshirt} />
+        <Category img={iconPants} />
+        <Category img={iconPants} />
+        <Category img={iconHeadphones} />
+        <Category img={iconSneakers} />
+      </div>
+
+      <div className='flex flex-row justify-center gap-24 pt-2 pb-2 mr-10 mb-10' > 
+
+      <Subtitles type='third2' children ="Camiseta"/>
+      <Subtitles type='third2' children ="Calça"/>
+      <Subtitles type='third2' children ="Boné"/>
+<Subtitles type='third2' children ="Headphone"/>
+<Subtitles type='third2' children ="Tênis"/>
+
+</div>
+  
+</div>
+    
+  
+     
     </div>
+    
   );
+
+  
 }

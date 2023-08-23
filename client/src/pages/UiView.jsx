@@ -5,13 +5,14 @@ import TrendingProducts from '../components/TrendingProducts';
 import Header from '../components/Header';
 import NavbarItem from '../components/NavbarItem';
 import ProductShow from '../components/ProductShow';
-import Resume from '../components/Resume';
-import CollectionCard from '../components/CollectionCard';
 
 export default function UiTest() {
   return (
     <main className="min-w-full">
-      <CollectionCards />
+      <Header/>
+      <NavbarItem/>
+      <ProductShow/>
+      <Footer/>
     </main>
   );
 }

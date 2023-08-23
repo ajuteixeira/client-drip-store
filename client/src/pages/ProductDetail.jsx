@@ -51,7 +51,7 @@ const ProductDetail = () => {
                        <p className='text-gray-600 tracking-wider'>Casual | {cardItem[0].category} | REF:{cardItem[0].id}</p>
                        <div className='flex gap-1'>
                             <div className='flex'>
-                                <img src={star} alt="estrela "/>
+                                <img src={star} alt="estrela "  width={10}/>
                                 <img src={star} alt="estrela" />
                                 <img src={star} alt="estrela" />
                                 <img src={star} alt="estrela" />

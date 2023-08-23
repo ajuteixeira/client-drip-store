@@ -27,6 +27,11 @@ export default function Button(props) {
       props.type === 'filter' &&
       'px-3 py-3 w-full sm:w-auto text-sm leading-5 tracking-wider rounded border-solid border-[#474747] border-2'
     }
+    ${
+      props.color === 'yellow-full' &&
+      'text-[#f5f5f5] bg-[#FFB31F] !w-full hover:bg-[#CF8900] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed'
+    }
+
 
     `}
     >

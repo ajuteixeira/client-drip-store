@@ -3,6 +3,7 @@ import UiView from '../pages/UiView';
 import Home from '../pages/Home';
 import { cardsInfo } from '../utils/cardsMock'
 import ProductDetail from '../pages/ProductDetail';
+import UiTest from '../pages/UiView';
 
 export const router = createBrowserRouter([
   {
@@ -18,11 +19,15 @@ export const router = createBrowserRouter([
     element: <UiView />
   },
   {
-    path: '/meuspedidos',
+    path: '/meus-pedidos',
     element: <UiView />,
   },
   {
     path: `/produtos/:itemId`,
     element: <ProductDetail/>
+  },
+  {
+    path: '/teste',
+    element: <UiTest/>
   }
 ]);

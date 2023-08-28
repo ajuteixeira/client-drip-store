@@ -36,8 +36,17 @@ export default function Subtitles(props) {
             >
               {props.children}
             </h4>    
-)}
+      )}
 
+
+      {props.type === 'third3' && (
+        <h4
+          className={
+            'text-black font-bold text-[13px] leading-[20px] tracking-[0.75px]'} 
+            >
+              {props.children}
+            </h4>    
+)}
     </>
   );
 }

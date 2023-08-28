@@ -1,4 +1,4 @@
-import Input from '../components/Input';
+import Input from './Input';
 
 export default function Form() {
     return (

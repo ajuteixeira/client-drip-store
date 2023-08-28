@@ -22,7 +22,7 @@ export default function menuRequests() {
             <img className='flex m-3' src={Sneakers} alt=""></img>
           </div>
           <p className="flex flex-col pl-4">
-            <Text type="mini-description" children="Pedido n 82874862532" />
+            <Text type="mini-description" className='leading-[10px]' children="Pedido n 82874862532" />
             <Subtitles
               type="third2"
               children="Tênis Nike Revolution 6 Next Nature Masculino"
@@ -40,7 +40,7 @@ export default function menuRequests() {
           <img className='flex m-3' src={Sneakers} alt=""></img>
           </div>
           <p className="flex flex-col pl-4">
-            <Text type="mini-description" children="Pedido n 82874862532" />
+            <Text type="mini-description" className='leading-[10px]' children="Pedido n 82874862532" />
             <Subtitles
               type="third2"
               children="Tênis Nike Revolution 6 Next Nature Masculino"
@@ -58,7 +58,7 @@ export default function menuRequests() {
           <img className='flex m-3' src={Sneakers} alt=""></img>
           </div>
           <p className="flex flex-col pl-4">
-            <Text type="mini-description" children="Pedido n 82874862532" />
+            <Text type="mini-description" className='leading-[10px]' children="Pedido n 82874862532" />
             <Subtitles
               type="third2"
               children="Tênis Nike Revolution 6 Next Nature Masculino"
@@ -77,7 +77,7 @@ export default function menuRequests() {
             
           </div>
           <p className="flex flex-col pl-4">
-            <Text type="mini-description" children="Pedido n 82874862532" />
+            <Text type="mini-description" className='leading-[10px]' children="Pedido n 82874862532" />
             <Subtitles
               type="third2"
               children="Tênis Nike Revolution 6 Next Nature Masculino"
@@ -95,7 +95,7 @@ export default function menuRequests() {
           <img className='flex m-3' src={Sneakers} alt=""></img>
           </div>
           <p className="flex flex-col pl-4">
-            <Text type="mini-description" children="Pedido n 82874862532" />
+            <Text type="mini-description" className='leading-[10px]' children="Pedido n 82874862532" />
             <Subtitles
               type="third2"
               children="Tênis Nike Revolution 6 Next Nature Masculino"

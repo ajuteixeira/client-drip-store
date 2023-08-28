@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MenuRequests from "../components/MenuRequests";
+import Informations from '../components/Informations';
 
 
 

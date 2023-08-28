@@ -4,6 +4,7 @@ import Home from '../pages/Home';
 // import { cardsInfo } from '../utils/cardsMock'
 import ProductDetail from '../pages/ProductDetail';
 import MyRequests from '../pages/MyRequests';
+import MyInformations from '../pages/MyInformations';
 
 export const router = createBrowserRouter([
   {

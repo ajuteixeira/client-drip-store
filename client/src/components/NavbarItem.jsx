@@ -9,6 +9,7 @@ export default function NavbarItem(props) {
           isActive
             ? 'text-[#C92071] leading-6 text-xs cursor-pointer underline underline-offset-4'
             : 'text-[#474747] leading-6 text-xs cursor-pointer'
+            
         }
       >
         {props.title}

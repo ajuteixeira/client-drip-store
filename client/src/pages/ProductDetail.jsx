@@ -16,6 +16,7 @@ const ProductDetail = () => {
     let cardItem = cardsInfo.filter(item => item.id == itemId)
     console.log(cardItem)
     const colors = '#CECDF5'
+    const totalAvaliacoes = 90
         
     
     
@@ -46,7 +47,7 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                     </div>
-                    <div className='flex flex-col gap-4 bg-orange-500 w-1/2'>
+                    <div className='flex flex-col gap-4  w-1/2'>
                        <h2 className='text-3xl text-[#474747] font-bold'>{cardItem[0].productName}</h2>
                        <p className='text-gray-600 tracking-wider'>Casual | {cardItem[0].category} | REF:{cardItem[0].id}</p>
                        <div className='flex gap-1'>
@@ -60,9 +61,15 @@ const ProductDetail = () => {
                             <div className='bg-yellow-500 flex text-blue-400 ml-5 rounded-lg'>
                                 <p className='text-white font-bold'>4.7</p>
                                 <img src={starVazia} alt="estrela" className=''/>
-                                <p>()</p>
+                                
                             </div>
+                            <p className='text-[#474747] tracking-wider'>( {totalAvaliacoes} avaliações )</p>
                        </div>
+                       <div className='flex'>
+                        <div className='price text-[#474747] text-3xl ml-2 font-black'>219,00</div>
+                        <div className='price text-slate-400 text-sm ml-2 font-black decoration-slice'>219,00</div>
+                       </div>
+                       
                     </div>
             </div>
             

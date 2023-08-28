@@ -10,11 +10,16 @@ export default function Pedido(props) {
             <img className="flex" src={props.url} alt=""></img>
           </div>
           <p className="flex flex-col pl-4">
-            <Text
-              type="mini-description"
-              className="leading-[10px]"
-              children={`Pedido n ${props.numero} `}
-            />
+            {props.numero ? (
+              <Text
+                type="mini-description"
+                className="leading-[10px]"
+                children={`Pedido n ${props.numero} `}
+              />
+            ) : (
+              ''
+            )}
+
             <Subtitles type="third2" children={props.produto} />
           </p>
         </div>
@@ -26,11 +31,9 @@ export default function Pedido(props) {
           <span className="text-[#EE4266]">Cancelado</span>
         )}
 
-       
         {props.status === 'Finalizado' && (
           <span className="text-[#8F8F8F]">Finalizado</span>
         )}
-
       </div>
       <div className="border-b mt-5 mb-5 border-gray-500"></div>
     </>

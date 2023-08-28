@@ -12,6 +12,7 @@ import ProductCart from '../pages/ProductCart';
 
 import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
+import CreateAccountForm from '../pages/CreateAccountForm';
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
   {
     path: '/criar-conta',
     element: <CreateAccount />,
-  }
+  },
+  {
+    path: '/criar-conta/formulario',
+    element: <CreateAccountForm />,
+  },
 
 ]);

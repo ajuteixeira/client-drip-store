@@ -9,41 +9,59 @@ export default function ProductCart() {
     <>
       <Header />
 
-      <div className="bg-[#f5f5f5] w-full pt-4">
-        <div className="px-24 ">
-          <div className="mb-8 ">
-            <th className="titulo">Meu Carrinho</th>
-            <th className="subTitulos ">Quantidade</th>
-            <th className="subTitulos ">Unitário</th>
-            <th className="subTitulos ">Total</th>
-          </div>
-
-          <div className=" flex">
-            <div className="w-1/2 flex  overflow-hidden mt-5 justify-between mb-14">
-              <img src={fotoSapato} alt="fotosapato"></img>
-              <div className="flex flex-col gap-4">
-                <div>
-                  <p className="referencia">
+      <div className="bg-[#f5f5f5] w-full pt-4 ">
+        <div className="mx-24 bg-white mt-24 flex">
+          <div className='w-3/4 px-8 bg-orange-200 '>
+            <div className="flex ">
+              <div className="titulo w-1/2 font-bold text-gray-600 tracking-wider">MEU CARRINHO</div>
+                <div className='w-1/2 flex justify-between text-gray-600 tracking-wider'>
+                  <div className="subTitulos ">QUANTIDADE</div>
+                  <div className="subTitulos ">UNITÁRIO</div>
+                  <div className="subTitulos ">TOTAL</div>
+                </div>
+                
+            </div>
+            <div className='bg-[#f5f5f5] h-[2px] text-center '></div>
+          <div className=" flex items-center">
+            <div className="w-1/2 flex justify-between h-56 items-center">
+              <div className='flex justify-center items-center h-40 w-56 bg-blue-100 rounded-lg'>
+                <img src={fotoSapato} alt="fotosapato" className='h-14'></img>
+              </div>
+              
+              <div className="flex flex-col gap-4 ml-8 ">
+                <div className='flex flex-col h-40 justify-between gap-4 '>
+                  <p className="referencia font-bold text-slate-600">
                     Tênis Nike Revolution 6 Next Nature Masculino
                   </p>
-                  <div className="divCores">
-                    <span className="cor">Cor:</span>
-                    <span className="tipoDeCor">Vemelho/branco</span>
+                  <div className="divCores flex">
+                    <div className="cor">Cor: </div>
+                    <div className="tipoDeCor"> Vemelho / branco</div>
                   </div>
-                  <div className="divCores">
-                    <span className="cor">Tamanho:</span>
-                    <span className="tipoDeCor">42</span>
-                  </div>
+                    <div className="cor">Tamanho: 42</div>
+                    
+                  
 
-                  <div className="precoNormal">R$ 219,00</div>
-                  <div className="precoDeVenda">R$ 219,00</div>
+                  
                 </div>
               </div>
             </div>
+            <div className='w-1/2 flex justify-between'>
+            <div className='h-40 flex flex-col '>
+              <p>sjudfijdsfiju</p>
+            </div>
+            <div className='h-40 flex flex-col '>
+              unitário
+            </div>
+            <div>
+              preço
+            </div>
+            </div>
+            
+
           </div>
-          <div className="divInfoAdicional">
+          <div className='bg-[#f5f5f5] h-[2px] text-center'></div>
+          <div className="divInfoAdicional ">
             <div className="divInfo">
-              <span className="estiloInfo">Cupom de desconto</span>
               <div className="divAcao">
                 <input className="input" placeholder="Insira seu código" />
                 <button className="botaoOk">ok</button>
@@ -57,6 +75,9 @@ export default function ProductCart() {
               </div>
             </div>
           </div>
+          
+          </div>
+          <div className='w-1/4 '><p>resumo</p></div>
         </div>
 
         <div className="flex justify-between">

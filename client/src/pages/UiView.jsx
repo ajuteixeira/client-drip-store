@@ -5,6 +5,7 @@ import TrendingProducts from '../components/TrendingProducts';
 import Header from "../components/Header";
 import NavbarItem from '../components/NavbarItem';
 import ProductShow from '../components/ProductShow';
+import MyRequests from './MyRequests';
 
 export default function UiTest() {
   return (
@@ -12,6 +13,7 @@ export default function UiTest() {
       <Header/>
       <NavbarItem/>
       <ProductShow/>
+      <MyRequests/>
       <Footer/>
     </main>
   );

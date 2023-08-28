@@ -7,6 +7,9 @@ export default function Button(props) {
       props.color === 'pink' &&
       'text-[#f5f5f5] bg-[#C92071] hover:bg-[#991956] disabled:bg-[#CCCCCC] disabled:cursor-not-allowed'
     }
+    ${
+      props.type === 'link' && 'text-[#C92071] underline' 
+    }
 
     ${
       props.color === 'white' &&

@@ -25,8 +25,8 @@ const ProductDetail = () => {
     <div className='bg-[#f5f5f5] w-full pt-4'>
         <div className='px-24 '>
             <h2 className='mb-8'>Home / Produtos / {cardItem[0].category} / Nike / {cardItem[0].productName}</h2>
-                <div className=' flex'>
-                    <div className='w-1/2'>
+                <div className=' flex '>
+                    <div className='w-1/2 '>
                             <img src={cardItem[0].url} alt="foto do produto" className={`w-full bg-[${colors}]`}/>
                             <div className='flex   overflow-hidden mt-5 justify-between mb-14'>
                                 <div className='w-1/6 bg-blue-200 flex justify-center items-center h-32'>
@@ -46,7 +46,7 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 bg-orange-500 w-1/2'>
                        <h2 className='text-3xl text-[#474747] font-bold'>{cardItem[0].productName}</h2>
                        <p className='text-gray-600 tracking-wider'>Casual | {cardItem[0].category} | REF:{cardItem[0].id}</p>
                        <div className='flex gap-1'>
@@ -60,6 +60,7 @@ const ProductDetail = () => {
                             <div className='bg-yellow-500 flex text-blue-400 ml-5 rounded-lg'>
                                 <p className='text-white font-bold'>4.7</p>
                                 <img src={starVazia} alt="estrela" className=''/>
+                                <p>()</p>
                             </div>
                        </div>
                     </div>

@@ -19,7 +19,7 @@ export default function Login() {
               </h2>
               <p className="text-[14px] text-[#474747] lg:text-[16px]">
                 Novo cliente? Então registre-se{' '}
-                <a className="underline" href="#">
+                <a className="underline" href="/criar-conta">
                   aqui
                 </a>
               </p>
@@ -33,7 +33,7 @@ export default function Login() {
                 title={'Login *'}
               />
               <Input
-                type={'text'}
+                type={'password'}
                 name={'senha'}
                 id={'senha'}
                 placeholder={'Insira sua senha'}

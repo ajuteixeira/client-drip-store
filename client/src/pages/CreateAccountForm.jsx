@@ -30,7 +30,11 @@ export default function CreateAccountForm() {
               interação do cliente.
             </label>
           </div>
-          <Button type="full" color="pink" title={'Criar Conta'} />
+          <Button
+            type="full"
+            color="pink"
+            title={<a href="/">Criar conta</a>}
+          />
         </div>
       </section>
       <Footer />

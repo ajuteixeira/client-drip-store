@@ -46,7 +46,11 @@ export default function Login() {
             >
               Esqueci minha senha
             </a>
-            <Button type="full" color="pink" title={'Acessar conta'} />
+            <Button
+              type="full"
+              color="pink"
+              title={<a href="/">Acessar conta</a>}
+            />
           </div>
           <div className="flex gap-3 justify-center items-center">
             <p className="text-[14px] text-[#474747] lg:text-[16px]">

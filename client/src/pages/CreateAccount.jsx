@@ -33,7 +33,11 @@ export default function CreateAccount() {
                 title={'Email *'}
               />
             </div>
-            <Button type="full" color="pink" title={'Criar conta'} />
+            <Button
+              type="full"
+              color="pink"
+              title={<a href="/criar-conta/formulario">Criar conta</a>}
+            />
           </div>
           <div className="flex gap-3 justify-center items-center">
             <p className="text-[14px] text-[#474747] lg:text-[16px]">

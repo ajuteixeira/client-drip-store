@@ -4,7 +4,7 @@ export default function SimpleHeader() {
   return (
     <header className="px-7 py-5 bg-white">
       <a
-        href="#"
+        href="/"
         className="flex justify-center items-center md:justify-start md:px-12"
       >
         <img className="w-40" src={logoHeader} alt="logo digital store" />

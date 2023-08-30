@@ -40,9 +40,6 @@ export default function ProductCart() {
                   </div>
                     <div className="cor">Tamanho: 42</div>
                     
-                  
-
-                  
                 </div>
               </div>
             </div>

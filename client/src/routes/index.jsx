@@ -19,10 +19,6 @@ export const router = createBrowserRouter([
     element: <Products/>,
   },
   {
-    path: '/categorias',
-    element: <UiView />,
-  },
-  {
     path: '/pedidosroutes',
     element: <MyRequests />,
   },

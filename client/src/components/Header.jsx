@@ -1,8 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import NavbarItem from './NavbarItem';
-
 import logoHeader from '../assets/images/logo-header.svg';
-import linkCadastro from '../assets/images/cadastre_se.svg';
 import carrinhoCompras from '../assets/images/carrinho.svg';
 import iconMenu from '../assets/images/icon-menu.svg';
 import iconBusca from '../assets/images/icon-busca.svg';
@@ -45,24 +43,19 @@ export default function Header() {
               <img src={iconBusca} alt="icone de busca" />
             </button>
           </div>
-
-          <a href="#" className="hidden md:block mx-5">
-            <img src={linkCadastro} alt="link para cadastro" />
+          <a href="/criar-conta" className="hidden md:block mx-5 underline leading-7 font-normal text-base text-[#474747] whitespace-nowrap">
+            Cadastre-se
           </a>
-
           <button type="button" className="mx-3 md:hidden">
             <img src={iconBusca} alt="icone de busca" />
           </button>
-
           <button className="hidden md:block bg-pink-600 text-white py-1 px-8 rounded-lg">
-            Entrar
+            <a href="/">Entrar</a>
           </button>
-
           <button type="button" onClick={handleClick}>
             <img src={carrinhoCompras} alt="carrinho de compras" />
           </button>
         </section>
-
         <nav className={''}>
           <div className={'gap-4 flex font-bold text-base'}>
             <NavbarItem path="/" title="Home" />

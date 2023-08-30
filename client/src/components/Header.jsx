@@ -8,18 +8,23 @@ import iconMenu from '../assets/images/icon-menu.svg';
 import iconBusca from '../assets/images/icon-busca.svg';
 import { useState } from 'react';
 import PopUp from './PopUp';
+import ModalMenu from './ModalMenu';
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
+  const [aberto , setAberto] = useState(false)
 
   const handleClick = () => {
     setOpen((prev) => !prev);
   };
+  const abrirMenu = () => {
+    setAberto(!aberto)
+  }
   return (
     <>
       <header className="flex flex-col px-24 py-10 justify-between">
         <section className="flex py-5 items-center justify-between">
-          <button className="mr-10 md:hidden">
+          <button className="mr-10 md:hidden" onClick={abrirMenu}>
             <img src={iconMenu} alt="icone de menu" />
           </button>
 
@@ -67,7 +72,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
-
+      {aberto && <ModalMenu/>}
       {isOpen && <PopUp />}
     </>
   );

@@ -4,9 +4,11 @@ import logo from "../assets/images/logobranco.png";
 export default function Footer() {
   return (
     <>
-      <footer className="footer bg-black pt-6 absolute w-full  ">
-        <div className="conteudo flex m-10 mx-10 justify-between"></div>
-        <div className='flex gap-24'>
+    
+      <footer className="footer lg:flex-col bg-black pt-6 absolute w-full  ">
+      <div className='flex  flex-col lg:flex-row'>
+        <div className="conteudo flex m-10 mx-10 justify-between "></div>
+        <div className='flex gap-24 '>
         <div className="sobre gap-2 p-8 text-white">
           <div className="logotipo flex items-start gap-2 mb-6">
             <img src={logo} alt="" />
@@ -18,9 +20,12 @@ export default function Footer() {
         </p>
         <FooterIcons />
         </div>
+      </div>
 
-        <div className="bloco flex gap-32 text-white">
-          <div className="informacao py-9 cursor-pointer">
+
+<div className='flex ml-9  flex-wrap'>
+        <div className="bloco flex md:gap-32 gap-9 text-white">
+          <div className="informacao md:py-9 cursor-pointer">
             <h1 className="titulo text-lg font-semibold ">Informação</h1>
             <p className="texto text-base font-normal">Sobre Drip Store</p>
             <p className="texto text-base font-normal">Segurança</p>
@@ -29,7 +34,7 @@ export default function Footer() {
             <p className="texto text-base font-normal">Trabalhe conosco</p>
             <p className="texto text-base font-normal">Meus pedidos</p>
           </div>
-          <div className="categorias py-9 cursor-pointer ">
+          <div className="categorias md:py-9 cursor-pointer ">
             <h1 className="titulo text-lg font-semibold">Categorias</h1>
             <p className="texto text-base font-normal">Camisetas</p>
             <p className="texto text-base font-normal">Calças</p>
@@ -37,6 +42,9 @@ export default function Footer() {
             <p className="texto text-base font-normal">Headphones</p>
             <p className="texto text-base font-normal">Tênis</p>
           </div>
+
+    </div>   
+    <div className='flex md:ml-32'>  
           <div className="contato text-lg font-semibold text-white py-9 cursor-pointer ">
             <h1 className="titulo font-semibold text-lg cursor-pointer ">
               Contato
@@ -49,6 +57,7 @@ export default function Footer() {
           </div>
         </div>
         </div>
+    </div>  
         <hr />
         <span className="dc flex justify-center font-normal py-5 text-white">
           @ 2022 Digital College

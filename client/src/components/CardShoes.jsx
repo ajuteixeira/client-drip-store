@@ -1,5 +1,6 @@
 import BannerShoes from '../assets/images/shoesBanner.svg';
 import Elipse from '../assets/images/elipse.svg';
+import Button from './Button';
 
 export default function CardShoes() {
   return (
@@ -28,9 +29,7 @@ export default function CardShoes() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip
         </p>
-        <button className="bg-pink-600 px-10 py-1 rounded-lg text-white font-semibold">
-          Ver Oferta
-        </button>
+        <Button type="default" color="pink" title={<a href="/produtos">Ver oferta</a>} />
       </div>
     </section>
   );

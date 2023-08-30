@@ -1,25 +1,28 @@
 import { NavLink } from 'react-router-dom';
 import NavbarItem from './NavbarItem';
-
 import logoHeader from '../assets/images/logo-header.svg';
-import linkCadastro from '../assets/images/cadastre_se.svg';
 import carrinhoCompras from '../assets/images/carrinho.svg';
 import iconMenu from '../assets/images/icon-menu.svg';
 import iconBusca from '../assets/images/icon-busca.svg';
 import { useState } from 'react';
 import PopUp from './PopUp';
+import ModalMenu from './ModalMenu';
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
+  const [aberto , setAberto] = useState(false)
 
   const handleClick = () => {
     setOpen((prev) => !prev);
   };
+  const abrirMenu = () => {
+    setAberto(!aberto)
+  }
   return (
     <>
       <header className="flex flex-col px-24 py-10 justify-between">
         <section className="flex py-5 items-center justify-between">
-          <button className="mr-10 md:hidden">
+          <button className="mr-10 md:hidden" onClick={abrirMenu}>
             <img src={iconMenu} alt="icone de menu" />
           </button>
 
@@ -40,24 +43,19 @@ export default function Header() {
               <img src={iconBusca} alt="icone de busca" />
             </button>
           </div>
-
-          <a href="#" className="hidden md:block mx-5">
-            <img src={linkCadastro} alt="link para cadastro" />
+          <a href="/criar-conta" className="hidden md:block mx-5 underline leading-7 font-normal text-base text-[#474747] whitespace-nowrap">
+            Cadastre-se
           </a>
-
           <button type="button" className="mx-3 md:hidden">
             <img src={iconBusca} alt="icone de busca" />
           </button>
-
           <button className="hidden md:block bg-pink-600 text-white py-1 px-8 rounded-lg">
-            Entrar
+            <a href="/">Entrar</a>
           </button>
-
           <button type="button" onClick={handleClick}>
             <img src={carrinhoCompras} alt="carrinho de compras" />
           </button>
         </section>
-
         <nav className={''}>
           <div className={'gap-4 flex font-bold text-base'}>
             <NavbarItem path="/" title="Home" />
@@ -67,7 +65,7 @@ export default function Header() {
           </div>
         </nav>
       </header>
-
+      {aberto && <ModalMenu/>}
       {isOpen && <PopUp />}
     </>
   );

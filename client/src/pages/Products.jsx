@@ -7,13 +7,12 @@ import NavbarItem from '../components/NavbarItem';
 import ProductShow from '../components/ProductShow';
 import MyRequests from './MyRequests';
 
-export default function UiTest() {
+export default function Products() {
   return (
     <main className="min-w-full">
       <Header/>
       <NavbarItem/>
       <ProductShow/>
-      <MyRequests/>
       <Footer/>
     </main>
   );

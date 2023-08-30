@@ -1,7 +1,7 @@
 import Button from "./Button"
 import Text from "./Text"
 
-export default function resumo () {
+export default function Resumo() {
     return (
 
         <div className="flex flex-col w-[334px] h-[364px] align-itens:flex-star p-[30px] bg-white">

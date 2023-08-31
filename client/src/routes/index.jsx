@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom';
-import UiView from '../pages/UiView';
 import Home from '../pages/Home';
 import ProductDetail from '../pages/ProductDetail';
 import MyRequests from '../pages/MyRequests';
@@ -8,6 +7,7 @@ import ProductCart from '../pages/ProductCart';
 import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
 import CreateAccountForm from '../pages/CreateAccountForm';
+import Products from '../pages/Products';
 
 export const router = createBrowserRouter([
   {
@@ -16,11 +16,7 @@ export const router = createBrowserRouter([
   },
   {
     path: '/produtos',
-    element: <UiView />,
-  },
-  {
-    path: '/categorias',
-    element: <UiView />,
+    element: <Products/>,
   },
   {
     path: '/pedidosroutes',

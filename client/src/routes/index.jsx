@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Home from '../pages/Home';
+import ContainerPurchase from '../components/ContainerPurchase';
 import ProductDetail from '../pages/ProductDetail';
 import MyRequests from '../pages/MyRequests';
 import MyInformations from '../pages/MyInformations';
@@ -8,6 +9,7 @@ import Login from '../pages/Login';
 import CreateAccount from '../pages/CreateAccount';
 import CreateAccountForm from '../pages/CreateAccountForm';
 import Products from '../pages/Products';
+
 
 export const router = createBrowserRouter([
   {
@@ -46,4 +48,11 @@ export const router = createBrowserRouter([
     path: '/criar-conta/formulario',
     element: <CreateAccountForm />,
   },
+
+  {
+    path: '/test',
+    element: <ContainerPurchase />,
+  },
+
+
 ]);

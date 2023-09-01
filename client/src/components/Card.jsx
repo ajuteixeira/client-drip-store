@@ -1,10 +1,15 @@
 import tenisImg from '../assets/images/product.png';
+import { useNavigate } from 'react-router-dom';
 export default function Card(props) {
+  const navigate = useNavigate()
+  const vaiParaProduto = (id) => {
+    navigate(`/produtos/${id}`)
+  }
   return (
-    <div className={`h-[439px] w-72 flex flex-col`}>
+    <div className={`h-[439px] md:w-72 w-full flex flex-col hover:cursor-pointer`} onClick={() => vaiParaProduto(props.id)}>
       <div
         className={`
-            w-full 
+            xl:w-full
             h-80 
             bg-white 
             rounded 

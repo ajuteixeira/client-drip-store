@@ -18,7 +18,7 @@ export default function Hero() {
             Consequat culpa exercitation mollit nisi except do do tempor laboris
             eiusmod irure consecte.
           </Text>
-          <Button type="default" color="pink" title={'Ver ofertas'} />
+          <Button type="default" color="pink" title={<a href="/produtos">Ver ofertas</a>} />
         </div>
         <div className="w-full sm:max-w-[600px]">
           <img src={heroProduct} alt="White sneakers" />

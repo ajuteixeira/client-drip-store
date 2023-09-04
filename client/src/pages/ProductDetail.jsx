@@ -7,7 +7,7 @@ import CollectionCard from '../components/CollectionCard'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import fotoSapato from '../assets/images/fotoSapato.png'
-import starVazia from '../assets/images/starVazia.png'
+import starVazia from '../assets/images/StarVazia.png'
 import star from '../assets/images/star.png'
 import Button from '../components/Button'
 

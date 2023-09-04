@@ -8,7 +8,7 @@ import Card from '../components/Card'
 import Footer from '../components/Footer'
 import fotoSapato from '../assets/images/fotoSapato.png'
 import starVazia from '../assets/images/StarVazia.png'
-import star from '../assets/images/star.png'
+import star from '../assets/images/Star.png'
 import Button from '../components/Button'
 
 const ProductDetail = () => {

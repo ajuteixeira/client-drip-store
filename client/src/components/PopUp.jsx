@@ -10,7 +10,7 @@ export default function PopUp() {
     <div className="absolute right-40 z-10 top-24">
       <div className="flex flex-col p-7 w-[315px] h-[454px] bg-white drop-shadow-lg ">
         <span>
-          <Subtitles type="third2" children="Meu Carinho" />
+          <Subtitles type="third2" children="Meu Carrinho" />
         </span>
         <div className="border-b mt-5 mb-5 border-gray-300"></div>
         <div className="flex gap-4">

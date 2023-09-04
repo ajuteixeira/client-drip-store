@@ -2,7 +2,7 @@ import React from 'react'
 import NavbarItem from './NavbarItem'
 import Text from './Text'
 import Button from './Button'
-import linkCadastro from '../assets/images/cadastre_se.svg';
+
 
 const ModalMenuSandwish = (props) => {
   return (

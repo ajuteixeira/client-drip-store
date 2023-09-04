@@ -4,7 +4,7 @@ import Text from './Text'
 import Button from './Button'
 import linkCadastro from '../assets/images/cadastre_se.svg';
 
-const ModalMenu = (props) => {
+const ModalMenuSandwish = (props) => {
   return (
     <div className='h-[702px] flex flex-col w-48 p-[30px] bg-white absolute'>
         <div className='flex flex-col justify-between h-screen'>
@@ -42,4 +42,4 @@ const ModalMenu = (props) => {
   )
 }
 
-export default ModalMenu
+export default ModalMenuSandwish

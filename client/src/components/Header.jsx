@@ -6,7 +6,7 @@ import iconMenu from '../assets/images/icon-menu.svg';
 import iconBusca from '../assets/images/icon-busca.svg';
 import { useState } from 'react';
 import PopUp from './PopUp';
-import ModalMenu from './ModalMenu';
+import ModalMenu from './ModalMenuSandwish';
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);

@@ -7,7 +7,7 @@ import Button from '../components/Button';
 
 export default function PopUp() {
   return (
-    <div className="absolute right-40 z-10 top-24">
+    <div className="absolute right-120 md:right-40 z-10 top-24">
       <div className="flex flex-col p-7 w-[315px] h-[454px] bg-white drop-shadow-lg ">
         <span>
           <Subtitles type="third2" children="Meu Carrinho" />

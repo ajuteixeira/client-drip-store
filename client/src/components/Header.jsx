@@ -20,7 +20,7 @@ export default function Header() {
   }
   return (
     <>
-      <header className="flex flex-col px-24 py-10 justify-between">
+      <header className="flex flex-col  px-24 py-10 justify-between">
         <section className="flex py-5 items-center justify-between">
           <button className="mr-10 md:hidden" onClick={abrirMenu}>
             <img src={iconMenu} alt="icone de menu" />
@@ -57,7 +57,7 @@ export default function Header() {
           </button>
         </section>
         <nav className={''}>
-          <div className={'gap-4 flex font-bold text-base'}>
+          <div className={'hidden md:gap-4 md:flex  md:font-bold md:text-base'}>
             <NavbarItem path="/" title="Home" />
             <NavbarItem path="/produtos" title="Produtos" />
             <NavbarItem path="/categorias" title="Categorias" />

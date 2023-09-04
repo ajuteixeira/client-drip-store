@@ -14,7 +14,7 @@ export default function CollectionCards() {
   return (
     <div className="flex flex-col gap-5 p-7 sm:p-20 bg-[#F9F8FE]">
       <Subtitles type="secondary">Produtos em alta</Subtitles>
-      <div className="flex flex-col md:flex-row gap-3 w-full">
+      <div className="flex flex-col md:flex-row gap-3  overflow-hidden w-full">
         <CollectionCard img={tShirtCollection} title="Supreme drop" />
         <CollectionCard img={tenisCollection} title="Coleção Adidas" />
         <CollectionCard img={headPhoneCollection} title="Novo Beats Bass" />

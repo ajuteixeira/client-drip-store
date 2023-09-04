@@ -7,7 +7,7 @@ export default function TrendingProducts() {
     <main className="p-7 bg-[#F9F8FE] sm:p-20">
       <div className="flex items-center justify-between">
         <Subtitles type="secondary">Produtos em alta</Subtitles>
-        <a href="#" className="text-[#C92071]">
+        <a href="/produtos" className="text-[#C92071]">
           Ver todos ➝
         </a>
       </div>

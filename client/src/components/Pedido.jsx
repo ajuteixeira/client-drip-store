@@ -13,7 +13,7 @@ export default function Pedido(props) {
             {props.numero ? (
               <Text
                 type="mini-description"
-                className="leading-[10px]"
+                className="leading-[8px]"
                 children={`Pedido n ${props.numero} `}
               />
             ) : (
